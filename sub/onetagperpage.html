@@ -1,3 +1,4 @@
+<html lang="en">
 <head>
     <title>Taxonomy</title>
    
@@ -6,6 +7,19 @@
  
 
     <!--/Data Layer-->
+    	<script>
+window.digitalData = window.digitalData || [];
+		window.digitalData.push({
+		"site":{
+                "SiteValues":{
+		"tagCategory": "industries",
+		"tagSection": "industrial-products",
+		"tagSubSection1": "aerospace-defense",
+		"tagSubSection2": "defense",
+		}
+	}
+            })
+			</script>
     <!--jQuery or other helper libraries-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--/jQuery-->
@@ -15,22 +29,19 @@
 </head>
 
 <body>
-    <h1>Sample HTML Page</h1>
-    <p>This is a very simple page to demonstrate basic implementation concepts of websdk</p>
-    <p>See <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en">Implementing the WEBSDK in Websites with Launch</a> for the complete tutorial</p>
-        
+    <h1>Option 1: One Tag per Page</h1>
+<br><p>This option represents only one tag per page.</p><br>
 
-<a class="button" href="OneTagperPage.html"><h1>Option-One Tag per Page</h1></a>
-   <br>
-<a class="button" href="SingelTagMultipleCategory.html"><h1>Option- Singel Tag -Multiple Category</h1></a>
-   <br>
-  <a class="button" href="MultipleTagMultipleCategory.html"><h1>Option-Multiple Tag - Multiple Category></h1></a>
-      <br>
-     <a class="button" href="PWCExampleofMultipleTagMultipleCategory.html"><h1>PWCExamples1- Multiple Category</h1></a>
-          <br>
- <a class="button" href="MutipletagwithOnlyeVar.html"><h1>MutipletagwithOnlyeVar- Mutltiple tag,Mutiple ctageories and only eVar</h1></a>
    
-    <P>Inspect the page and in the console type "digitalData" to see the dataLayer</P>
-   <P>Inspect the page in the network tab look for  "interact"call to see the data</P>
+<h1> Tag Used: "pwc:industries/industrial-products/aerospace-defense/defence"</h1>
+<p>In ADOBE ANALYTICS Data will look Like in the report as: </p>
+ <p>eVar201 = "industries" </p>
+ <p>eVar202 =  "industrial-products"</p>
+ <p>eVar203 = "aerospace-defense"</p>
+ <p>eVar204= "defense"</p>
+	<p><h2><a class="button" href="https://robferguson4.github.io/robferguson4/sub/onetagperpage.html">Return to Homepage</a></h2></p>
+
 </body>
 </html>
+
+
